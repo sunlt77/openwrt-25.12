@@ -9,5 +9,6 @@
 #sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git' ./feeds.conf.default
 #sed -i '$a src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main' ./feeds.conf.default
 
-# homeproxy
-#git clone --depth=1 https://github.com/immortalwrt/homeproxy.git package/homeproxy
+# passwall
+rm -rf feeds/luci/applications/luci-app-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall package/passwall-luci

@@ -9,6 +9,8 @@
 #sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git' ./feeds.conf.default
 #sed -i '$a src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main' ./feeds.conf.default
 
-# passwall
+
+
+# 移除 openwrt feeds 过时的luci版本
 rm -rf feeds/luci/applications/luci-app-passwall
-git clone https://github.com/xiaorouji/openwrt-passwall package/passwall-luci
+git clone https://github.com/Openwrt-Passwall/openwrt-passwall package/passwall-luci
